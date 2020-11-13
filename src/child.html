@@ -1,5 +1,10 @@
 <template>
-	<div class="slds-m-horizontal_xx-small slds-m-bottom_x-small">
-		<slot name="icon"></slot> <span class="slds-p-left_small">{label}</span>
+	<div class="box icon-check">
+		<div class="value" data-value={value}>{value}</div>
+		<div class="title">{title}</div>
+		<div class="footer">{footer}</div>
+		<div class="arrow">
+			<c-arrow tendence={tendence}></c-arrow>
+		</div>
 	</div>
 </template>
